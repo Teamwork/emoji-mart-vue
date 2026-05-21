@@ -54,6 +54,19 @@ const STRIP_FIELDS = ['d', 'e', 'f', 'h', 'k', 'o', 'subcategory']
 const STANDARD_TONES = ['1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF']
 const STANDARD_TONE_SET = new Set(STANDARD_TONES)
 
+// About half the canonical names match a trivial Title Case of the emoji
+// id (e.g., `grinning_face` → "Grinning Face"). For those we drop `a`
+// from the lean dataset and reconstruct in uncompress(). The other half
+// have richer names that don't derive cleanly (`100` → "Hundred Points
+// Symbol", `joy` → "Face with Tears of Joy") — we keep those verbatim.
+const deriveName = (id) =>
+  id
+    .replace(/[-_]+/g, ' ')
+    .replace(/(^|\s)\S/g, (c) => c.toUpperCase())
+
+const isDerivableName = (id, name) =>
+  typeof name === 'string' && name.toLowerCase() === deriveName(id).toLowerCase()
+
 const compactSkinVariations = (variations) => {
   const tones = Object.keys(variations)
   if (
@@ -72,12 +85,16 @@ const extractKeywords = (emoji) => {
   return capped.length ? capped : null
 }
 
-const trimEmoji = (emoji) => {
+const trimEmoji = (emoji, id) => {
   for (const key of STRIP_FIELDS) delete emoji[key]
 
   if (emoji.skin_variations) {
     emoji.s = compactSkinVariations(emoji.skin_variations)
     delete emoji.skin_variations
+  }
+
+  if (isDerivableName(id, emoji.a)) {
+    delete emoji.a
   }
 
   // Keywords are extracted into a separate file; drop them from the base
@@ -109,7 +126,7 @@ const main = () => {
   for (const id in data.emojis) {
     const kw = extractKeywords(data.emojis[id])
     if (kw) keywords[id] = kw
-    trimEmoji(data.emojis[id])
+    trimEmoji(data.emojis[id], id)
     touched++
   }
 

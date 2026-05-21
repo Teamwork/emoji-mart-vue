@@ -59,6 +59,15 @@ function deepFreeze(object) {
 // here so downstream code can keep reading `emoji.skin_variations`.
 const STANDARD_SKIN_TONES = ['1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF']
 
+// Trivially Title-Cased version of the emoji id, used as the display name
+// for the ~half of emojis where the canonical name matches this form
+// (e.g., `grinning_face` → "Grinning Face"). The other half have richer
+// names stored verbatim and aren't reconstructed here.
+const deriveName = (id) =>
+  id
+    .replace(/[-_]+/g, ' ')
+    .replace(/(^|\s)\S/g, (c) => c.toUpperCase())
+
 const expandSkinVariations = (emoji) => {
   if (!emoji.s) return
   const tones = emoji.s === 1 ? STANDARD_SKIN_TONES : emoji.s
@@ -113,6 +122,8 @@ const uncompress = (data) => {
 
     if (!emoji.short_names) emoji.short_names = []
     emoji.short_names.unshift(id)
+
+    if (!emoji.name) emoji.name = deriveName(id)
 
     // Sprite sheet coords are absent in the trimmed (native-only) dataset.
     // Leave sheet_x/sheet_y undefined — getPosition() in emoji-data.js is
