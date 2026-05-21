@@ -23,6 +23,45 @@ Sprite-set image files (`data/apple|facebook|google|twitter.json`) and
 the matching CSS background-image URLs were dropped — this fork is
 native-only.
 
+## Theming
+
+The default stylesheet is driven by CSS custom properties prefixed
+`--emojip-*`. Defaults preserve the upstream Slack-like look; override
+any subset to retheme:
+
+```css
+.dark-theme .emoji-mart {
+  --emojip-bg: #1f2024;
+  --emojip-fg: #e6e6e6;
+  --emojip-border: #2d2f36;
+  --emojip-emoji-hover-bg: #2a2c33;
+  --emojip-anchor-active-fg: #fff;
+  --emojip-anchor-bar-bg: #fc3858;
+  --emojip-category-label-bg: rgba(31, 32, 36, 0.95);
+}
+```
+
+Available variables (all scoped under `.emoji-mart` — see
+[css/emoji-mart.css](css/emoji-mart.css) for the full set with
+defaults):
+
+  - **Surface**: `--emojip-bg`, `--emojip-fg`, `--emojip-border`,
+    `--emojip-radius`, `--emojip-height`
+  - **Anchors**: `--emojip-anchor-fg`, `--emojip-anchor-active-fg`,
+    `--emojip-anchor-bar-bg`
+  - **Emoji hover halo**: `--emojip-emoji-hover-bg`
+  - **Search input**: `--emojip-search-bg`, `--emojip-search-border`,
+    `--emojip-search-radius`, `--emojip-search-font-size`
+  - **Category label**: `--emojip-category-label-bg`,
+    `--emojip-category-label-size`
+  - **Preview**: `--emojip-preview-name-fg`, `--emojip-preview-name-size`,
+    `--emojip-preview-shortname-fg`, `--emojip-preview-shortname-size`,
+    `--emojip-preview-emoticon-fg`, `--emojip-preview-emoticon-size`
+  - **Title**: `--emojip-title-label-fg`, `--emojip-title-label-size`
+  - **No-results**: `--emojip-no-results-fg`, `--emojip-no-results-size`
+  - **Typography**: `--emojip-font-family`,
+    `--emojip-emoji-font-family`, `--emojip-font-size`
+
 Upstream history: a fork of https://github.com/jm-david/emoji-mart-vue with
 many performance fixes, tests and structural code changes.
 See the [changelog](#changelog) for details.

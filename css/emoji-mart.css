@@ -1,3 +1,70 @@
+/*
+ * Themable defaults — all values can be overridden by setting --emojip-*
+ * variables on .emoji-mart (or any ancestor). Defaults below preserve the
+ * upstream Slack-like look; hosts that want a different theme just
+ * override the variables, e.g.:
+ *
+ *   .my-app .emoji-mart {
+ *     --emojip-bg: var(--my-app-surface);
+ *     --emojip-fg: var(--my-app-text);
+ *     --emojip-border: var(--my-app-border);
+ *     --emojip-emoji-hover-bg: var(--my-app-hover);
+ *   }
+ *
+ * No need to redeclare unused variables — anything not overridden falls
+ * back to the default.
+ */
+.emoji-mart {
+  /* Surface */
+  --emojip-bg: #fff;
+  --emojip-fg: #222427;
+  --emojip-border: #d9d9d9;
+  --emojip-radius: 5px;
+  --emojip-height: 420px;
+
+  /* Anchors (category tabs) */
+  --emojip-anchor-fg: #858585;
+  --emojip-anchor-active-fg: #464646;
+  --emojip-anchor-bar-bg: #464646;
+
+  /* Emoji hover halo */
+  --emojip-emoji-hover-bg: #f4f4f4;
+
+  /* Sticky category label */
+  --emojip-category-label-bg: rgba(255, 255, 255, 0.95);
+  --emojip-category-label-size: 16px;
+
+  /* Search input */
+  --emojip-search-bg: var(--emojip-bg);
+  --emojip-search-border: var(--emojip-border);
+  --emojip-search-radius: 25px;
+  --emojip-search-font-size: 16px;
+
+  /* Preview */
+  --emojip-preview-name-fg: var(--emojip-fg);
+  --emojip-preview-name-size: 14px;
+  --emojip-preview-shortname-fg: #888;
+  --emojip-preview-shortname-size: 12px;
+  --emojip-preview-emoticon-fg: #bbb;
+  --emojip-preview-emoticon-size: 11px;
+
+  /* Title */
+  --emojip-title-label-fg: #999a9c;
+  --emojip-title-label-size: 21px;
+
+  /* No-results state */
+  --emojip-no-results-fg: var(--emojip-anchor-fg);
+  --emojip-no-results-size: 14px;
+
+  /* Typography */
+  --emojip-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    sans-serif;
+  --emojip-emoji-font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Segoe UI',
+    'Apple Color Emoji', 'Twemoji Mozilla', 'Noto Color Emoji', 'EmojiOne Color',
+    'Android Emoji';
+  --emojip-font-size: 16px;
+}
+
 .emoji-mart,
 .emoji-mart * {
   box-sizing: border-box;
@@ -5,16 +72,15 @@
 }
 
 .emoji-mart {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  /* display: inline-block; */
+  font-family: var(--emojip-font-family);
+  font-size: var(--emojip-font-size);
   display: flex;
   flex-direction: column;
-  height: 420px;
-  color: #222427;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  background: #fff;
+  height: var(--emojip-height);
+  color: var(--emojip-fg);
+  border: 1px solid var(--emojip-border);
+  border-radius: var(--emojip-radius);
+  background: var(--emojip-bg);
 }
 
 .emoji-mart-emoji {
@@ -38,24 +104,22 @@
 }
 
 .emoji-type-native {
-  font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Segoe UI',
-    'Apple Color Emoji', 'Twemoji Mozilla', 'Noto Color Emoji', 'EmojiOne Color',
-    'Android Emoji';
+  font-family: var(--emojip-emoji-font-family);
   word-break: keep-all;
 }
 
 .emoji-mart-bar {
-  border: 0 solid #d9d9d9;
+  border: 0 solid var(--emojip-border);
 }
 .emoji-mart-bar:first-child {
   border-bottom-width: 1px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: var(--emojip-radius);
+  border-top-right-radius: var(--emojip-radius);
 }
 .emoji-mart-bar:last-child {
   border-top-width: 1px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: var(--emojip-radius);
+  border-bottom-right-radius: var(--emojip-radius);
 }
 
 .emoji-mart-scroll {
@@ -73,7 +137,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0 6px;
-  color: #858585;
+  color: var(--emojip-anchor-fg);
   line-height: 0;
 }
 
@@ -91,7 +155,7 @@
 }
 .emoji-mart-anchor:hover,
 .emoji-mart-anchor-selected {
-  color: #464646;
+  color: var(--emojip-anchor-active-fg);
 }
 
 .emoji-mart-anchor-selected .emoji-mart-anchor-bar {
@@ -104,7 +168,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #464646;
+  background-color: var(--emojip-anchor-bar-bg);
 }
 
 .emoji-mart-anchors i {
@@ -133,12 +197,14 @@
   padding: 0 6px;
 }
 .emoji-mart-search input {
-  font-size: 16px;
+  font-size: var(--emojip-search-font-size);
   display: block;
   width: 100%;
   padding: 0.2em 0.6em;
-  border-radius: 25px;
-  border: 1px solid #d9d9d9;
+  border-radius: var(--emojip-search-radius);
+  border: 1px solid var(--emojip-search-border);
+  background: var(--emojip-search-bg);
+  color: inherit;
   outline: 0;
 }
 .emoji-mart-search-results {
@@ -166,7 +232,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4;
+  background-color: var(--emojip-emoji-hover-bg);
   border-radius: 100%;
   opacity: 0;
 }
@@ -182,18 +248,15 @@
 .emoji-mart-static .emoji-mart-category-label {
   z-index: 2;
   position: relative;
-  /* position: sticky; */
-  /* position: -webkit-sticky; */
 }
 
 .emoji-mart-category-label h3 {
   display: block;
-  font-size: 16px;
+  font-size: var(--emojip-category-label-size);
   width: 100%;
   font-weight: 500;
   padding: 5px 6px;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--emojip-category-label-bg);
 }
 
 .emoji-mart-emoji {
@@ -203,10 +266,10 @@
 }
 
 .emoji-mart-no-results {
-  font-size: 14px;
+  font-size: var(--emojip-no-results-size);
   text-align: center;
   padding-top: 70px;
-  color: #858585;
+  color: var(--emojip-no-results-fg);
 }
 .emoji-mart-no-results .emoji-mart-category-label {
   display: none;
@@ -247,12 +310,13 @@
 }
 
 .emoji-mart-preview-name {
-  font-size: 14px;
+  font-size: var(--emojip-preview-name-size);
+  color: var(--emojip-preview-name-fg);
 }
 
 .emoji-mart-preview-shortname {
-  font-size: 12px;
-  color: #888;
+  font-size: var(--emojip-preview-shortname-size);
+  color: var(--emojip-preview-shortname-fg);
 }
 .emoji-mart-preview-shortname + .emoji-mart-preview-shortname,
 .emoji-mart-preview-shortname + .emoji-mart-preview-emoticon,
@@ -261,8 +325,8 @@
 }
 
 .emoji-mart-preview-emoticon {
-  font-size: 11px;
-  color: #bbb;
+  font-size: var(--emojip-preview-emoticon-size);
+  color: var(--emojip-preview-emoticon-fg);
 }
 
 .emoji-mart-title span {
@@ -275,17 +339,17 @@
 }
 
 .emoji-mart-title-label {
-  color: #999a9c;
-  font-size: 21px;
+  color: var(--emojip-title-label-fg);
+  font-size: var(--emojip-title-label-size);
   font-weight: 300;
 }
 
 .emoji-mart-skin-swatches {
   font-size: 0;
   padding: 2px 0;
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--emojip-border);
   border-radius: 12px;
-  background-color: #fff;
+  background-color: var(--emojip-bg);
 }
 
 .emoji-mart-skin-swatches-opened .emoji-mart-skin-swatch {
@@ -338,7 +402,7 @@
   width: 4px;
   height: 4px;
   margin: -2px 0 0 -2px;
-  background-color: #fff;
+  background-color: var(--emojip-bg);
   border-radius: 100%;
   pointer-events: none;
   opacity: 0;
