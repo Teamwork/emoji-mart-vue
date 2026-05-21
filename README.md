@@ -3,8 +3,9 @@
 [![codecov](https://codecov.io/gh/serebrov/emoji-mart-vue/branch/master/graph/badge.svg)](https://codecov.io/gh/serebrov/emoji-mart-vue)
 
 This project is a fork of https://github.com/serebrov/emoji-mart-vue,
-trimmed for native-only rendering. The fork adds two derived data files
-generated from upstream's `data/all.json`:
+trimmed for native-only rendering. Built against `emoji-datasource@16.0.0`
+(Unicode 16.0, Sept 2024). The fork adds two derived data files generated
+from upstream's `data/all.json`:
 
   - `data/all-lean.json` — base dataset with no sprite metadata and
     flattened skin variations (~49 KB gzip).
