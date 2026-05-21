@@ -40,9 +40,12 @@ const FILLER_KEYWORDS = new Set([
   'blue-square',
 ])
 
-// Short-form keys from compress.js: d/e/f/h are has_img_<set> sprite flags,
-// k is sheet_x/sheet_y.
-const STRIP_FIELDS = ['d', 'e', 'f', 'h', 'k']
+// Short-form keys from compress.js to drop entirely:
+//   d, e, f, h — has_img_<set> sprite flags (sprite rendering removed)
+//   k          — sheet_x/sheet_y (sprite rendering removed)
+//   o          — added_in / sort_order (never read by picker code)
+// `subcategory` is also dropped (also never read).
+const STRIP_FIELDS = ['d', 'e', 'f', 'h', 'k', 'o', 'subcategory']
 
 // The 292 of 305 emojis that have skin variations use exactly these five
 // Fitzpatrick tones. We flag them with `s: 1` and reconstruct the full set
