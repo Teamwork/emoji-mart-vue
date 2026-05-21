@@ -1,7 +1,7 @@
 const EmojiProps = {
   native: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   tooltip: {
     type: Boolean,
@@ -71,7 +71,7 @@ const PickerProps = {
   },
   native: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   emojiTooltip: {
     type: Boolean,

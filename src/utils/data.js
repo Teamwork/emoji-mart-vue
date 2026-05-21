@@ -71,9 +71,14 @@ const uncompress = (data) => {
     if (!emoji.short_names) emoji.short_names = []
     emoji.short_names.unshift(id)
 
-    emoji.sheet_x = emoji.sheet[0]
-    emoji.sheet_y = emoji.sheet[1]
-    delete emoji.sheet
+    // Sprite sheet coords are absent in the trimmed (native-only) dataset.
+    // Leave sheet_x/sheet_y undefined — getPosition() in emoji-data.js is
+    // only called for sprite rendering, which never runs when native=true.
+    if (emoji.sheet) {
+      emoji.sheet_x = emoji.sheet[0]
+      emoji.sheet_y = emoji.sheet[1]
+      delete emoji.sheet
+    }
 
     if (!emoji.text) emoji.text = ''
 

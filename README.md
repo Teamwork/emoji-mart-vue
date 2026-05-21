@@ -2,7 +2,29 @@
 
 [![codecov](https://codecov.io/gh/serebrov/emoji-mart-vue/branch/master/graph/badge.svg)](https://codecov.io/gh/serebrov/emoji-mart-vue)
 
-This project is a fork of https://github.com/jm-david/emoji-mart-vue with many performance fixes, tests and structural code changes.
+This project is a fork of https://github.com/serebrov/emoji-mart-vue,
+trimmed for native-only rendering. The fork adds two derived data files
+generated from upstream's `data/all.json`:
+
+  - `data/all-lean.json` — base dataset with no sprite metadata and
+    flattened skin variations (~49 KB gzip).
+  - `data/keywords.json` — optional keyword index for richer search
+    (~30 KB gzip). Skip the import to omit it from your bundle.
+
+Upstream's `data/all.json` is kept untouched so we can pull upstream
+updates without merge conflicts; running `npm run build:data` re-derives
+the two lean files from it. The picker defaults to `native: true`.
+
+With name-only search the chunk lands at ~65 KB gzip (picker + lean
+base); adding the keyword file brings it to ~95 KB gzip with full search.
+Compare to upstream's ~102 KB gzip chunk.
+
+Sprite-set image files (`data/apple|facebook|google|twitter.json`) and
+the matching CSS background-image URLs were dropped — this fork is
+native-only.
+
+Upstream history: a fork of https://github.com/jm-david/emoji-mart-vue with
+many performance fixes, tests and structural code changes.
 See the [changelog](#changelog) for details.
 
 The original component was [very slow to show/destroy](https://github.com/jm-david/emoji-mart-vue/pull/47), around 2 seconds to show and even a bit longer to destroy, so it was unusable in a popup.
@@ -54,9 +76,16 @@ See also: [#88](https://github.com/serebrov/emoji-mart-vue/issues/88).
 </template>
 
 <script>
-// Import data/twitter.json to reduce size, all.json contains data for
-// all emoji sets.
-import data from "emoji-mart-vue-fast/data/all.json";
+// Lean base emoji data (~49 KB gzip). Contains name + unicode + skin
+// variations. Search against this dataset matches the canonical emoji name
+// only. (Use `data/all.json` instead if you need the upstream shape with
+// sprite metadata — required only for non-native rendering, which this
+// fork doesn't ship.)
+import data from "emoji-mart-vue-fast/data/all-lean.json";
+// Optional keyword index (~30 KB gzip). Add it if you want users to be able
+// to search by terms like "lol" → 🤣 or "weep" → 😂. Skip the import if
+// you don't need richer search and your bundler will omit the chunk.
+import keywords from "emoji-mart-vue-fast/data/keywords.json";
 // Import default CSS
 import "emoji-mart-vue-fast/css/emoji-mart.css";
 
@@ -65,9 +94,9 @@ import { Picker, EmojiIndex } from "emoji-mart-vue-fast";
 // Vue 3, import components from `/src`:
 import { Picker, EmojiIndex } from "emoji-mart-vue-fast/src";
 
-// Create emoji data index.
-// We can change it (for example, filter by category) before passing to the component.
-let emojiIndex = new EmojiIndex(data);
+// Create the index. Pass `keywords` to enable keyword search; omit it for
+// name-only search (and the smaller bundle).
+let emojiIndex = new EmojiIndex(data, { keywords });
 
 export default {
   name: "App",

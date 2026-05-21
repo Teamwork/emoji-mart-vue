@@ -59,7 +59,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist/",
-    "build:data": "node scripts/build-data",
+    "build:data": "node scripts/build-data && node scripts/trim-data",
     "build:data-debug": "node --inspect=0.0.0.0:9230 --inspect-brk scripts/build-data",
     "build:dist": "webpack --config src/webpack.config.js",
     "build:dist-stats": "webpack --config src/webpack.config.js --profile --json > stats.json",

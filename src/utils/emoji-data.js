@@ -117,8 +117,22 @@ export class EmojiIndex {
       custom,
       recent,
       recentLength = 20,
+      keywords,
     } = {},
   ) {
+    // Keyword data is split into a separate JSON file so consumers that
+    // don't need keyword search can avoid the ~30 KB gzip download. Merge
+    // it into the base data before uncompress so buildSearch() picks it
+    // up. The data object is frozen after uncompress, so callers reusing
+    // a data object across multiple indexes should pass keywords on the
+    // first construction.
+    if (keywords && data.compressed) {
+      for (const id in keywords) {
+        if (data.emojis[id]) {
+          data.emojis[id].j = keywords[id]
+        }
+      }
+    }
     this._data = uncompress(data)
     // Callback to exclude specific emojis
     this._emojisFilter = emojisToShowFilter || null
@@ -470,8 +484,15 @@ export class EmojiData {
         let skinKey = SKINS[skinIdx]
         let variationData = this._data.skin_variations[skinKey]
         let skinData = Object.assign({}, data)
-        for (let k in variationData) {
-          skinData[k] = variationData[k]
+        // Trimmed dataset stores each variation as just the unified codepoint
+        // string. Upstream stores an object with sheet coords + per-OS image
+        // flags; we still accept that shape so the upstream data.json works.
+        if (typeof variationData === 'string') {
+          skinData.unified = variationData
+        } else {
+          for (let k in variationData) {
+            skinData[k] = variationData[k]
+          }
         }
         delete skinData.skin_variations
         skinData['skin_tone'] = parseInt(skinIdx) + 1
