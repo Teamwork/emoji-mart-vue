@@ -2,13 +2,16 @@
 //
 // We keep data/all.json untouched (matches upstream so we can pull updates
 // without merge conflicts) and write two derived files alongside it:
-//   data/all-lean.json — base dataset for native-only rendering
-//                        (no sprite fields, flattened skin variations,
-//                         keywords stripped out)
+//   data/all-lean.json — base dataset for native-only rendering. Compact
+//                        shape: sprite fields dropped, skin variations
+//                        flagged as a number (standard Fitzpatrick set)
+//                        or short array (multi-skin pairs), category
+//                        membership stored per-emoji rather than as a
+//                        list of IDs per category, keywords removed.
 //   data/keywords.json — { emojiId: [kw, kw, ...] }, capped + filler-dropped
 //
 // Consumers that don't need keyword search can skip importing keywords.json;
-// their bundler omits the ~30 KB gzip payload entirely.
+// their bundler omits the ~25 KB gzip payload entirely.
 
 const fs = require('fs')
 const path = require('path')
@@ -41,15 +44,22 @@ const FILLER_KEYWORDS = new Set([
 // k is sheet_x/sheet_y.
 const STRIP_FIELDS = ['d', 'e', 'f', 'h', 'k']
 
-const trimSkinVariations = (variations) => {
-  const out = {}
-  for (const tone in variations) {
-    const v = variations[tone]
-    // Source shape carries sheet coords + per-OS image flags per tone;
-    // native rendering only needs the unified codepoint.
-    out[tone] = typeof v === 'string' ? v : v.unified
+// The 292 of 305 emojis that have skin variations use exactly these five
+// Fitzpatrick tones. We flag them with `s: 1` and reconstruct the full set
+// at uncompress time. The other 13 are multi-skin pair emojis (Handshake,
+// Two Women Holding Hands, Kiss, etc.) — they get the explicit tone list.
+const STANDARD_TONES = ['1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF']
+const STANDARD_TONE_SET = new Set(STANDARD_TONES)
+
+const compactSkinVariations = (variations) => {
+  const tones = Object.keys(variations)
+  if (
+    tones.length === STANDARD_TONES.length &&
+    tones.every((t) => STANDARD_TONE_SET.has(t))
+  ) {
+    return 1
   }
-  return out
+  return tones
 }
 
 const extractKeywords = (emoji) => {
@@ -63,7 +73,8 @@ const trimEmoji = (emoji) => {
   for (const key of STRIP_FIELDS) delete emoji[key]
 
   if (emoji.skin_variations) {
-    emoji.skin_variations = trimSkinVariations(emoji.skin_variations)
+    emoji.s = compactSkinVariations(emoji.skin_variations)
+    delete emoji.skin_variations
   }
 
   // Keywords are extracted into a separate file; drop them from the base
@@ -75,6 +86,20 @@ const trimEmoji = (emoji) => {
 
 const main = () => {
   const data = JSON.parse(fs.readFileSync(INPUT, 'utf8'))
+
+  // Move category membership onto the per-emoji record as `p: <category index>`.
+  // The category list keeps only id + name (no per-category emoji ID arrays).
+  // (`c` is taken by upstream's compressed `non_qualified` field, so we use `p`.)
+  data.categories.forEach((cat, idx) => {
+    if (Array.isArray(cat.emojis)) {
+      for (const emojiId of cat.emojis) {
+        if (data.emojis[emojiId]) {
+          data.emojis[emojiId].p = idx
+        }
+      }
+      delete cat.emojis
+    }
+  })
 
   const keywords = {}
   let touched = 0

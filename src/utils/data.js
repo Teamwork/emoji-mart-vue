@@ -54,14 +54,57 @@ function deepFreeze(object) {
   return Object.freeze(object)
 }
 
+// The 292 emojis with a standard skin variation set use these five
+// Fitzpatrick tones. Stored as `s: 1` in the lean dataset and reconstructed
+// here so downstream code can keep reading `emoji.skin_variations`.
+const STANDARD_SKIN_TONES = ['1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF']
+
+const expandSkinVariations = (emoji) => {
+  if (!emoji.s) return
+  const tones = emoji.s === 1 ? STANDARD_SKIN_TONES : emoji.s
+  // Skin variation unified codepoints are always `${parent}-${tone}`.
+  // For multi-skin pair emojis (e.g., Handshake) the tone key itself can
+  // contain a hyphen ("1F3FB-1F3FC"), producing "PARENT-1F3FB-1F3FC".
+  // `emoji.b` is the parent's unified hex — the long-form field name
+  // ("unified") hasn't been assigned yet, this runs before the mapping.
+  const parent = emoji.b
+  const out = {}
+  for (const tone of tones) {
+    out[tone] = `${parent}-${tone}`
+  }
+  emoji.skin_variations = out
+  delete emoji.s
+}
+
+// In the lean dataset each emoji carries `p: <category index>` and the
+// categories array no longer holds per-category emoji ID lists. Rebuild
+// those lists in memory so the picker can iterate categories as before.
+const rebuildCategoryLists = (data) => {
+  if (!data.categories.some((c) => !c.emojis)) return
+  for (const cat of data.categories) {
+    if (!cat.emojis) cat.emojis = []
+  }
+  for (const id in data.emojis) {
+    const em = data.emojis[id]
+    if (typeof em.p === 'number' && data.categories[em.p]) {
+      data.categories[em.p].emojis.push(id)
+    }
+    delete em.p
+  }
+}
+
 const uncompress = (data) => {
   if (!data.compressed) {
     return data
   }
   data.compressed = false
 
+  rebuildCategoryLists(data)
+
   for (let id in data.emojis) {
     let emoji = data.emojis[id]
+
+    expandSkinVariations(emoji)
 
     for (let key in mapping) {
       emoji[key] = emoji[mapping[key]]
