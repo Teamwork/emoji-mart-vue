@@ -142,7 +142,7 @@ export class EmojiIndex {
     // Custom emojis
     this._custom = custom || []
     // Recent emojis
-    // TODO: make parameter configurable
+    this._recentLength = recentLength
     this._recent = recent || frequently.get(recentLength)
 
     this._emojis = {}
@@ -211,24 +211,48 @@ export class EmojiIndex {
     }
 
     if (this.isCategoryNeeded('recent')) {
-      if (this._recent.length) {
-        this._recent.map((id) => {
-          for (let customEmoji of this._customCategory.emojis) {
-            if (customEmoji.id === id) {
-              this._recentCategory.emojis.push(customEmoji)
-              return
-            }
+      this._populateRecentCategory()
+    }
+  }
+
+  // Rebuild the "Frequently Used" category from the latest `frequently`
+  // module state. Safe to call any number of times — only mutates the
+  // recent category arrays, never touches the frozen emoji data.
+  //
+  // Picker.vue calls this on mount so a fresh open always reflects the
+  // latest picks; consumers don't need to rebuild the EmojiIndex on each
+  // open just to refresh recents.
+  refreshRecent() {
+    if (!this.isCategoryNeeded('recent')) return
+    // `this` is Object.freeze'd after construction so `this._recent`
+    // can't be reassigned. Mutate the array in place instead.
+    const next = frequently.get(this._recentLength)
+    this._recent.length = 0
+    this._recent.push(...next)
+    this._populateRecentCategory()
+  }
+
+  _populateRecentCategory() {
+    this._recentCategory.emojis.length = 0
+    if (this._recent.length) {
+      this._recent.forEach((id) => {
+        for (let customEmoji of this._customCategory.emojis) {
+          if (customEmoji.id === id) {
+            this._recentCategory.emojis.push(customEmoji)
+            return
           }
-          if (this.hasEmoji(id)) {
-            this._recentCategory.emojis.push(this.emoji(id))
-          }
-          return
-        })
-      }
-      // Add recent category to the top
-      if (this._recentCategory.emojis.length) {
-        this._categories.unshift(this._recentCategory)
-      }
+        }
+        if (this.hasEmoji(id)) {
+          this._recentCategory.emojis.push(this.emoji(id))
+        }
+      })
+    }
+
+    const idx = this._categories.indexOf(this._recentCategory)
+    if (this._recentCategory.emojis.length) {
+      if (idx === -1) this._categories.unshift(this._recentCategory)
+    } else if (idx !== -1) {
+      this._categories.splice(idx, 1)
     }
   }
 

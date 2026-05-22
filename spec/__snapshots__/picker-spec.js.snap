@@ -19,7 +19,6 @@ exports[`Picker renders correctly 1`] = `
         class="emoji-mart-anchor emoji-mart-anchor-selected"
         data-title="Frequently Used"
         role="tab"
-        style="color: rgb(174, 101, 197);"
         type="button"
       >
         <div
@@ -43,7 +42,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -74,7 +72,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -110,7 +107,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -141,7 +137,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -169,7 +164,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -197,7 +191,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -228,7 +221,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -259,7 +251,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -287,7 +278,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -315,7 +305,6 @@ exports[`Picker renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
     </div>
@@ -32676,7 +32665,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         class="emoji-mart-anchor emoji-mart-anchor-selected"
         data-title="Frequently Used"
         role="tab"
-        style="color: rgb(174, 101, 197);"
         type="button"
       >
         <div
@@ -32700,7 +32688,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32731,7 +32718,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32767,7 +32753,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32798,7 +32783,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32826,7 +32810,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32854,7 +32837,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32885,7 +32867,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32916,7 +32897,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32944,7 +32924,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
       <button
@@ -32972,7 +32951,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
         <span
           aria-hidden="true"
           class="emoji-mart-anchor-bar"
-          style="background-color: rgb(174, 101, 197);"
         />
       </button>
     </div>

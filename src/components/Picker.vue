@@ -137,6 +137,17 @@ export default {
       view: new PickerView(this),
     }
   },
+  mounted() {
+    // Refresh the "Frequently Used" category on every mount so newly
+    // picked emojis appear when the picker is reopened. The EmojiIndex
+    // snapshots its recent list at construction time and the data is
+    // frozen, so without this hook a shared EmojiIndex instance never
+    // sees new picks. Safe no-op when the category is excluded or the
+    // index wasn't built with recent enabled.
+    if (typeof this.data.refreshRecent === 'function') {
+      this.data.refreshRecent()
+    }
+  },
   computed: {
     customStyles() {
       return {
