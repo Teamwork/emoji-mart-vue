@@ -57,7 +57,8 @@ defaults):
   - **Preview**: `--emojip-preview-name-fg`, `--emojip-preview-name-size`,
     `--emojip-preview-shortname-fg`, `--emojip-preview-shortname-size`,
     `--emojip-preview-emoticon-fg`, `--emojip-preview-emoticon-size`
-  - **Title**: `--emojip-title-label-fg`, `--emojip-title-label-size`
+  - **Title**: `--emojip-title-label-fg`, `--emojip-title-label-size`,
+    `--emojip-title-label-weight`
   - **No-results**: `--emojip-no-results-fg`, `--emojip-no-results-size`
   - **Typography**: `--emojip-font-family`,
     `--emojip-emoji-font-family`, `--emojip-font-size`

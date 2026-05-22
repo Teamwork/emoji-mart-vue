@@ -55,7 +55,10 @@ const PickerProps = {
   },
   color: {
     type: String,
-    default: '#ae65c5',
+    // Empty default so the active anchor color + bar fall back to the
+    // --emojip-anchor-active-fg / --emojip-anchor-bar-bg CSS variables.
+    // Consumers can still pass an explicit color to override.
+    default: '',
   },
   set: {
     type: String,

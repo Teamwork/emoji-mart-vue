@@ -51,6 +51,7 @@
   /* Title */
   --emojip-title-label-fg: #999a9c;
   --emojip-title-label-size: 21px;
+  --emojip-title-label-weight: 300;
 
   /* No-results state */
   --emojip-no-results-fg: var(--emojip-anchor-fg);
@@ -341,7 +342,7 @@
 .emoji-mart-title-label {
   color: var(--emojip-title-label-fg);
   font-size: var(--emojip-title-label-size);
-  font-weight: 300;
+  font-weight: var(--emojip-title-label-weight);
 }
 
 .emoji-mart-skin-swatches {
