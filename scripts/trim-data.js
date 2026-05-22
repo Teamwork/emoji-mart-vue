@@ -47,10 +47,17 @@ const FILLER_KEYWORDS = new Set([
 // `subcategory` is also dropped (also never read).
 const STRIP_FIELDS = ['d', 'e', 'f', 'h', 'k', 'o', 'subcategory']
 
-// The 292 of 305 emojis that have skin variations use exactly these five
-// Fitzpatrick tones. We flag them with `s: 1` and reconstruct the full set
-// at uncompress time. The other 13 are multi-skin pair emojis (Handshake,
-// Two Women Holding Hands, Kiss, etc.) — they get the explicit tone list.
+// 116 of 305 skin-variation emojis have unified codepoints that are
+// straightforwardly `parent-tone` (e.g., wave 1F44B → 1F44B-1F3FB). For
+// those we flag them with `s: 1` (or `s: [tones]` when the tone keys
+// aren't the standard 5) and reconstruct at uncompress time.
+//
+// The other 189 are ZWJ sequences (`1F468-1F3FB-200D-1F9B0` for red
+// haired man — tone in the middle) or variation-selector sequences
+// (`261D-FE0F-1F3FB` for point up + VS-16 + tone) that don't fit the
+// simple pattern. Those keep the full `skin_variations` map with the
+// unified codepoint per tone; the size cost (~2.6 KB gzip) is worth
+// not rendering "👨🟫" instead of "👨🏽".
 const STANDARD_TONES = ['1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF']
 const STANDARD_TONE_SET = new Set(STANDARD_TONES)
 
@@ -67,8 +74,18 @@ const deriveName = (id) =>
 const isDerivableName = (id, name) =>
   typeof name === 'string' && name.toLowerCase() === deriveName(id).toLowerCase()
 
-const compactSkinVariations = (variations) => {
+// Either returns a compact `s` value (1 or [tones]) when every variation's
+// unified codepoint is exactly `parent-tone`, or null when the variations
+// need their full unified strings preserved (ZWJ sequences etc.).
+const compactSkinVariations = (parent, variations) => {
   const tones = Object.keys(variations)
+  for (const tone of tones) {
+    const v = variations[tone]
+    const unified = typeof v === 'string' ? v : v && v.unified
+    if (unified !== `${parent}-${tone}`) {
+      return null
+    }
+  }
   if (
     tones.length === STANDARD_TONES.length &&
     tones.every((t) => STANDARD_TONE_SET.has(t))
@@ -76,6 +93,18 @@ const compactSkinVariations = (variations) => {
     return 1
   }
   return tones
+}
+
+// Flatten the upstream `{tone: {unified, sheet_x, ...}}` shape to a simple
+// `{tone: unified}` map. Used for the emojis where compactSkinVariations
+// returns null.
+const flattenSkinVariations = (variations) => {
+  const out = {}
+  for (const tone in variations) {
+    const v = variations[tone]
+    out[tone] = typeof v === 'string' ? v : v.unified
+  }
+  return out
 }
 
 const extractKeywords = (emoji) => {
@@ -89,8 +118,14 @@ const trimEmoji = (emoji, id) => {
   for (const key of STRIP_FIELDS) delete emoji[key]
 
   if (emoji.skin_variations) {
-    emoji.s = compactSkinVariations(emoji.skin_variations)
-    delete emoji.skin_variations
+    const compact = compactSkinVariations(emoji.b, emoji.skin_variations)
+    if (compact !== null) {
+      emoji.s = compact
+      delete emoji.skin_variations
+    } else {
+      // ZWJ / VS-16 sequence — preserve the full unified codepoints.
+      emoji.skin_variations = flattenSkinVariations(emoji.skin_variations)
+    }
   }
 
   if (isDerivableName(id, emoji.a)) {
