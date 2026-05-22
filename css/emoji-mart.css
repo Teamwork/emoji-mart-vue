@@ -39,6 +39,15 @@
   --emojip-search-border: var(--emojip-border);
   --emojip-search-radius: 25px;
   --emojip-search-font-size: 16px;
+  /* Inputs don't inherit font-family from ancestors. Setting this
+   * variable lets hosts pick a different font for the search input,
+   * otherwise falls through to the main picker font. */
+  --emojip-search-font-family: var(--emojip-font-family);
+  /* Shorthand padding (top/bottom + left/right). Override to taste. */
+  --emojip-search-padding: 0.2em 0.6em;
+  /* Height of the input. `auto` keeps the upstream behaviour where
+   * padding + font-size drive the size; hosts can pin it to a value. */
+  --emojip-search-height: auto;
 
   /* Preview */
   --emojip-preview-name-fg: var(--emojip-fg);
@@ -199,9 +208,11 @@
 }
 .emoji-mart-search input {
   font-size: var(--emojip-search-font-size);
+  font-family: var(--emojip-search-font-family);
   display: block;
   width: 100%;
-  padding: 0.2em 0.6em;
+  height: var(--emojip-search-height);
+  padding: var(--emojip-search-padding);
   border-radius: var(--emojip-search-radius);
   border: 1px solid var(--emojip-search-border);
   background: var(--emojip-search-bg);

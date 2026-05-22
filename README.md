@@ -51,7 +51,9 @@ defaults):
     `--emojip-anchor-bar-bg`
   - **Emoji hover halo**: `--emojip-emoji-hover-bg`
   - **Search input**: `--emojip-search-bg`, `--emojip-search-border`,
-    `--emojip-search-radius`, `--emojip-search-font-size`
+    `--emojip-search-radius`, `--emojip-search-font-size`,
+    `--emojip-search-font-family`, `--emojip-search-padding`,
+    `--emojip-search-height`
   - **Category label**: `--emojip-category-label-bg`,
     `--emojip-category-label-size`
   - **Preview**: `--emojip-preview-name-fg`, `--emojip-preview-name-size`,
