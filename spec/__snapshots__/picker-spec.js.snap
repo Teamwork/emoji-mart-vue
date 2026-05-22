@@ -1507,40 +1507,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🙂‍↔️, head_shaking_horizontally"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="head_shaking_horizontally"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🙂‍↔️
-          </span>
-        </button>
-        <button
-          aria-label="🙂‍↕️, head_shaking_vertically"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="head_shaking_vertically"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🙂‍↕️
-          </span>
-        </button>
-        <button
           aria-label="😌, relieved"
           aria-posinset="1"
           aria-selected="false"
@@ -1623,23 +1589,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             😴
-          </span>
-        </button>
-        <button
-          aria-label="🫩, face_with_bags_under_eyes"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="face_with_bags_under_eyes"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🫩
           </span>
         </button>
         <button
@@ -7661,57 +7610,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🚶‍➡️, person_walking_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_walking_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🚶‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🚶‍♀️‍➡️, woman_walking_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_walking_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🚶‍♀️‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🚶‍♂️‍➡️, man_walking_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_walking_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🚶‍♂️‍➡️
-          </span>
-        </button>
-        <button
           aria-label="🧍, standing_person"
           aria-posinset="1"
           aria-selected="false"
@@ -7814,57 +7712,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🧎‍➡️, person_kneeling_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_kneeling_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧎‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🧎‍♀️‍➡️, woman_kneeling_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_kneeling_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧎‍♀️‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🧎‍♂️‍➡️, man_kneeling_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_kneeling_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧎‍♂️‍➡️
-          </span>
-        </button>
-        <button
           aria-label="🧑‍🦯, person_with_probing_cane"
           aria-posinset="1"
           aria-selected="false"
@@ -7879,23 +7726,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🧑‍🦯
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🦯‍➡️, person_with_white_cane_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_with_white_cane_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🦯‍➡️
           </span>
         </button>
         <button
@@ -7916,23 +7746,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="👨‍🦯‍➡️, man_with_white_cane_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_with_white_cane_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👨‍🦯‍➡️
-          </span>
-        </button>
-        <button
           aria-label="👩‍🦯, woman_with_probing_cane"
           aria-posinset="1"
           aria-selected="false"
@@ -7947,23 +7760,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             👩‍🦯
-          </span>
-        </button>
-        <button
-          aria-label="👩‍🦯‍➡️, woman_with_white_cane_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_with_white_cane_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👩‍🦯‍➡️
           </span>
         </button>
         <button
@@ -7984,23 +7780,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🧑‍🦼‍➡️, person_in_motorized_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_in_motorized_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🦼‍➡️
-          </span>
-        </button>
-        <button
           aria-label="👨‍🦼, man_in_motorized_wheelchair"
           aria-posinset="1"
           aria-selected="false"
@@ -8015,23 +7794,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             👨‍🦼
-          </span>
-        </button>
-        <button
-          aria-label="👨‍🦼‍➡️, man_in_motorized_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_in_motorized_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👨‍🦼‍➡️
           </span>
         </button>
         <button
@@ -8052,23 +7814,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="👩‍🦼‍➡️, woman_in_motorized_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_in_motorized_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👩‍🦼‍➡️
-          </span>
-        </button>
-        <button
           aria-label="🧑‍🦽, person_in_manual_wheelchair"
           aria-posinset="1"
           aria-selected="false"
@@ -8083,23 +7828,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🧑‍🦽
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🦽‍➡️, person_in_manual_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_in_manual_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🦽‍➡️
           </span>
         </button>
         <button
@@ -8120,23 +7848,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="👨‍🦽‍➡️, man_in_manual_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_in_manual_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👨‍🦽‍➡️
-          </span>
-        </button>
-        <button
           aria-label="👩‍🦽, woman_in_manual_wheelchair"
           aria-posinset="1"
           aria-selected="false"
@@ -8151,23 +7862,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             👩‍🦽
-          </span>
-        </button>
-        <button
-          aria-label="👩‍🦽‍➡️, woman_in_manual_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_in_manual_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👩‍🦽‍➡️
           </span>
         </button>
         <button
@@ -8219,57 +7913,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🏃‍♀️
-          </span>
-        </button>
-        <button
-          aria-label="🏃‍➡️, person_running_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_running_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🏃‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🏃‍♀️‍➡️, woman_running_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_running_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🏃‍♀️‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🏃‍♂️‍➡️, man_running_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_running_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🏃‍♂️‍➡️
           </span>
         </button>
         <button
@@ -9497,6 +9140,23 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
+          aria-label="👪, family"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="family"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            👪
+          </span>
+        </button>
+        <button
           aria-label="👨‍👩‍👦, man-woman-boy"
           aria-posinset="1"
           aria-selected="false"
@@ -9990,91 +9650,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="👪, family"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👪
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🧑‍🧒, family_adult_adult_child"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family_adult_adult_child"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🧑‍🧒
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🧑‍🧒‍🧒, family_adult_adult_child_child"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family_adult_adult_child_child"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🧑‍🧒‍🧒
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🧒, family_adult_child"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family_adult_child"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🧒
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🧒‍🧒, family_adult_child_child"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family_adult_child_child"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🧒‍🧒
-          </span>
-        </button>
-        <button
           aria-label="👣, footprints"
           aria-posinset="1"
           aria-selected="false"
@@ -10089,23 +9664,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             👣
-          </span>
-        </button>
-        <button
-          aria-label="🫆, fingerprint"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="fingerprint"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🫆
           </span>
         </button>
          
@@ -11605,23 +11163,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🐦‍🔥, phoenix"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="phoenix"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🐦‍🔥
-          </span>
-        </button>
-        <button
           aria-label="🐸, frog"
           aria-posinset="1"
           aria-selected="false"
@@ -11976,91 +11517,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🪼
-          </span>
-        </button>
-        <button
-          aria-label="🦀, crab"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="crab"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦀
-          </span>
-        </button>
-        <button
-          aria-label="🦞, lobster"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="lobster"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦞
-          </span>
-        </button>
-        <button
-          aria-label="🦐, shrimp"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="shrimp"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦐
-          </span>
-        </button>
-        <button
-          aria-label="🦑, squid"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="squid"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦑
-          </span>
-        </button>
-        <button
-          aria-label="🦪, oyster"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="oyster"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦪
           </span>
         </button>
         <button
@@ -12811,23 +12267,6 @@ exports[`Picker renders correctly 1`] = `
             🍄
           </span>
         </button>
-        <button
-          aria-label="🪾, leafless_tree"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="leafless_tree"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🪾
-          </span>
-        </button>
          
         <!---->
       </section>
@@ -12928,23 +12367,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🍋
-          </span>
-        </button>
-        <button
-          aria-label="🍋‍🟩, lime"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="lime"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🍋‍🟩
           </span>
         </button>
         <button
@@ -13472,40 +12894,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🫛
-          </span>
-        </button>
-        <button
-          aria-label="🍄‍🟫, brown_mushroom"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="brown_mushroom"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🍄‍🟫
-          </span>
-        </button>
-        <button
-          aria-label="🫜, root_vegetable"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="root_vegetable"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🫜
           </span>
         </button>
         <button
@@ -14373,6 +13761,91 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🥡
+          </span>
+        </button>
+        <button
+          aria-label="🦀, crab"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="crab"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦀
+          </span>
+        </button>
+        <button
+          aria-label="🦞, lobster"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="lobster"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦞
+          </span>
+        </button>
+        <button
+          aria-label="🦐, shrimp"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="shrimp"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦐
+          </span>
+        </button>
+        <button
+          aria-label="🦑, squid"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="squid"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦑
+          </span>
+        </button>
+        <button
+          aria-label="🦪, oyster"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="oyster"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦪
           </span>
         </button>
         <button
@@ -21567,23 +21040,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🪉, harp"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="harp"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🪉
-          </span>
-        </button>
-        <button
           aria-label="📱, iphone"
           aria-posinset="1"
           aria-selected="false"
@@ -23828,23 +23284,6 @@ exports[`Picker renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="⛓️‍💥, broken_chain"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="broken_chain"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            ⛓️‍💥
-          </span>
-        </button>
-        <button
           aria-label="⛓️, chains"
           aria-posinset="1"
           aria-selected="false"
@@ -23927,23 +23366,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🪜
-          </span>
-        </button>
-        <button
-          aria-label="🪏, shovel"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="shovel"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🪏
           </span>
         </button>
         <button
@@ -27106,23 +26528,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             ™️
-          </span>
-        </button>
-        <button
-          aria-label="🫟, splatter"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="splatter"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🫟
           </span>
         </button>
         <button
@@ -31934,23 +31339,6 @@ exports[`Picker renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🇸🇦
-          </span>
-        </button>
-        <button
-          aria-label="🇨🇶, flag-sark"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="flag-sark"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🇨🇶
           </span>
         </button>
         <button
@@ -34777,40 +34165,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🙂‍↔️, head_shaking_horizontally"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="head_shaking_horizontally"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🙂‍↔️
-          </span>
-        </button>
-        <button
-          aria-label="🙂‍↕️, head_shaking_vertically"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="head_shaking_vertically"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🙂‍↕️
-          </span>
-        </button>
-        <button
           aria-label="😌, relieved"
           aria-posinset="1"
           aria-selected="false"
@@ -34893,23 +34247,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             😴
-          </span>
-        </button>
-        <button
-          aria-label="🫩, face_with_bags_under_eyes"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="face_with_bags_under_eyes"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🫩
           </span>
         </button>
         <button
@@ -40932,57 +40269,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🚶‍➡️, person_walking_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_walking_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🚶‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🚶‍♀️‍➡️, woman_walking_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_walking_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🚶‍♀️‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🚶‍♂️‍➡️, man_walking_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_walking_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🚶‍♂️‍➡️
-          </span>
-        </button>
-        <button
           aria-label="🧍, standing_person"
           aria-posinset="1"
           aria-selected="false"
@@ -41085,57 +40371,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🧎‍➡️, person_kneeling_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_kneeling_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧎‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🧎‍♀️‍➡️, woman_kneeling_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_kneeling_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧎‍♀️‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🧎‍♂️‍➡️, man_kneeling_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_kneeling_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧎‍♂️‍➡️
-          </span>
-        </button>
-        <button
           aria-label="🧑‍🦯, person_with_probing_cane"
           aria-posinset="1"
           aria-selected="false"
@@ -41150,23 +40385,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🧑‍🦯
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🦯‍➡️, person_with_white_cane_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_with_white_cane_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🦯‍➡️
           </span>
         </button>
         <button
@@ -41187,23 +40405,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="👨‍🦯‍➡️, man_with_white_cane_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_with_white_cane_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👨‍🦯‍➡️
-          </span>
-        </button>
-        <button
           aria-label="👩‍🦯, woman_with_probing_cane"
           aria-posinset="1"
           aria-selected="false"
@@ -41218,23 +40419,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             👩‍🦯
-          </span>
-        </button>
-        <button
-          aria-label="👩‍🦯‍➡️, woman_with_white_cane_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_with_white_cane_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👩‍🦯‍➡️
           </span>
         </button>
         <button
@@ -41255,23 +40439,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🧑‍🦼‍➡️, person_in_motorized_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_in_motorized_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🦼‍➡️
-          </span>
-        </button>
-        <button
           aria-label="👨‍🦼, man_in_motorized_wheelchair"
           aria-posinset="1"
           aria-selected="false"
@@ -41286,23 +40453,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             👨‍🦼
-          </span>
-        </button>
-        <button
-          aria-label="👨‍🦼‍➡️, man_in_motorized_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_in_motorized_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👨‍🦼‍➡️
           </span>
         </button>
         <button
@@ -41323,23 +40473,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="👩‍🦼‍➡️, woman_in_motorized_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_in_motorized_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👩‍🦼‍➡️
-          </span>
-        </button>
-        <button
           aria-label="🧑‍🦽, person_in_manual_wheelchair"
           aria-posinset="1"
           aria-selected="false"
@@ -41354,23 +40487,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🧑‍🦽
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🦽‍➡️, person_in_manual_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_in_manual_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🦽‍➡️
           </span>
         </button>
         <button
@@ -41391,23 +40507,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="👨‍🦽‍➡️, man_in_manual_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_in_manual_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👨‍🦽‍➡️
-          </span>
-        </button>
-        <button
           aria-label="👩‍🦽, woman_in_manual_wheelchair"
           aria-posinset="1"
           aria-selected="false"
@@ -41422,23 +40521,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             👩‍🦽
-          </span>
-        </button>
-        <button
-          aria-label="👩‍🦽‍➡️, woman_in_manual_wheelchair_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_in_manual_wheelchair_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👩‍🦽‍➡️
           </span>
         </button>
         <button
@@ -41490,57 +40572,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🏃‍♀️
-          </span>
-        </button>
-        <button
-          aria-label="🏃‍➡️, person_running_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="person_running_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🏃‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🏃‍♀️‍➡️, woman_running_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="woman_running_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🏃‍♀️‍➡️
-          </span>
-        </button>
-        <button
-          aria-label="🏃‍♂️‍➡️, man_running_facing_right"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="man_running_facing_right"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🏃‍♂️‍➡️
           </span>
         </button>
         <button
@@ -42768,6 +41799,23 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
+          aria-label="👪, family"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="family"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            👪
+          </span>
+        </button>
+        <button
           aria-label="👨‍👩‍👦, man-woman-boy"
           aria-posinset="1"
           aria-selected="false"
@@ -43261,91 +42309,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="👪, family"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            👪
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🧑‍🧒, family_adult_adult_child"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family_adult_adult_child"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🧑‍🧒
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🧑‍🧒‍🧒, family_adult_adult_child_child"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family_adult_adult_child_child"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🧑‍🧒‍🧒
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🧒, family_adult_child"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family_adult_child"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🧒
-          </span>
-        </button>
-        <button
-          aria-label="🧑‍🧒‍🧒, family_adult_child_child"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="family_adult_child_child"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🧑‍🧒‍🧒
-          </span>
-        </button>
-        <button
           aria-label="👣, footprints"
           aria-posinset="1"
           aria-selected="false"
@@ -43360,23 +42323,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             👣
-          </span>
-        </button>
-        <button
-          aria-label="🫆, fingerprint"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="fingerprint"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🫆
           </span>
         </button>
          
@@ -44877,23 +43823,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🐦‍🔥, phoenix"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="phoenix"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🐦‍🔥
-          </span>
-        </button>
-        <button
           aria-label="🐸, frog"
           aria-posinset="1"
           aria-selected="false"
@@ -45248,91 +44177,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🪼
-          </span>
-        </button>
-        <button
-          aria-label="🦀, crab"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="crab"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦀
-          </span>
-        </button>
-        <button
-          aria-label="🦞, lobster"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="lobster"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦞
-          </span>
-        </button>
-        <button
-          aria-label="🦐, shrimp"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="shrimp"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦐
-          </span>
-        </button>
-        <button
-          aria-label="🦑, squid"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="squid"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦑
-          </span>
-        </button>
-        <button
-          aria-label="🦪, oyster"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="oyster"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🦪
           </span>
         </button>
         <button
@@ -46083,23 +44927,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             🍄
           </span>
         </button>
-        <button
-          aria-label="🪾, leafless_tree"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="leafless_tree"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🪾
-          </span>
-        </button>
          
         <!---->
       </section>
@@ -46201,23 +45028,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🍋
-          </span>
-        </button>
-        <button
-          aria-label="🍋‍🟩, lime"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="lime"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🍋‍🟩
           </span>
         </button>
         <button
@@ -46745,40 +45555,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🫛
-          </span>
-        </button>
-        <button
-          aria-label="🍄‍🟫, brown_mushroom"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="brown_mushroom"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🍄‍🟫
-          </span>
-        </button>
-        <button
-          aria-label="🫜, root_vegetable"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="root_vegetable"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🫜
           </span>
         </button>
         <button
@@ -47646,6 +46422,91 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🥡
+          </span>
+        </button>
+        <button
+          aria-label="🦀, crab"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="crab"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦀
+          </span>
+        </button>
+        <button
+          aria-label="🦞, lobster"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="lobster"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦞
+          </span>
+        </button>
+        <button
+          aria-label="🦐, shrimp"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="shrimp"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦐
+          </span>
+        </button>
+        <button
+          aria-label="🦑, squid"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="squid"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦑
+          </span>
+        </button>
+        <button
+          aria-label="🦪, oyster"
+          aria-posinset="1"
+          aria-selected="false"
+          aria-setsize="1812"
+          class="emoji-mart-emoji"
+          data-title="oyster"
+          role="option"
+          type="button"
+        >
+          <span
+            class="emoji-set-apple emoji-type-native"
+            style="font-size: 22.8px;"
+          >
+            🦪
           </span>
         </button>
         <button
@@ -54843,23 +53704,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="🪉, harp"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="harp"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🪉
-          </span>
-        </button>
-        <button
           aria-label="📱, iphone"
           aria-posinset="1"
           aria-selected="false"
@@ -57104,23 +55948,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
           </span>
         </button>
         <button
-          aria-label="⛓️‍💥, broken_chain"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="broken_chain"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            ⛓️‍💥
-          </span>
-        </button>
-        <button
           aria-label="⛓️, chains"
           aria-posinset="1"
           aria-selected="false"
@@ -57203,23 +56030,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🪜
-          </span>
-        </button>
-        <button
-          aria-label="🪏, shovel"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="shovel"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🪏
           </span>
         </button>
         <button
@@ -60383,23 +59193,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             ™️
-          </span>
-        </button>
-        <button
-          aria-label="🫟, splatter"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="splatter"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🫟
           </span>
         </button>
         <button
@@ -65212,23 +64005,6 @@ exports[`infiniteScroll is off renders correctly 1`] = `
             style="font-size: 22.8px;"
           >
             🇸🇦
-          </span>
-        </button>
-        <button
-          aria-label="🇨🇶, flag-sark"
-          aria-posinset="1"
-          aria-selected="false"
-          aria-setsize="1812"
-          class="emoji-mart-emoji"
-          data-title="flag-sark"
-          role="option"
-          type="button"
-        >
-          <span
-            class="emoji-set-apple emoji-type-native"
-            style="font-size: 22.8px;"
-          >
-            🇨🇶
           </span>
         </button>
         <button

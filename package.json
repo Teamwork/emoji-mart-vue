@@ -38,7 +38,7 @@
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
-    "emoji-datasource": "^16.0.0",
+    "emoji-datasource": "15.0.1",
     "emojilib": "^3.0.10",
     "inflection": "1.13.4",
     "jest": "^27.5.1",

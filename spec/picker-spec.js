@@ -113,7 +113,7 @@ describe('categories', () => {
     expect(categories.at(0).vm.emojis.length).toBe(1)
     expect(categories.at(1).vm.name).toBe('Flags')
     expect(categories.at(1).vm.id).toBe('flags')
-    expect(categories.at(1).vm.emojis.length).toBe(251)
+    expect(categories.at(1).vm.emojis.length).toBe(250)
   })
 })
 
